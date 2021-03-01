@@ -1,0 +1,88 @@
+
+.game-timer{
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+}
+.game-cards-container{
+    display: flex;
+    width: 70%;
+    height: ;
+    flex-direction: column;
+}
+.RowCardContainer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.game-card{
+    background-size: contain;
+    width: 130px;
+    height: 150px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.game-buttons-container{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+.game-button{
+    width: 40%;
+    height: 60%;
+    font-size: 45px;
+}
+.game{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-of-game{
+	font-size: 60px;
+    text-align: center;
+    color: white;
+	font-weight: bolder;
+	background-color: rgba(243, 113, 26, 0.7);
+	width: 80%;
+	border-radius: 20px;
+	margin-bottom: 5%;
+}
+
+.clicked{
+    animation-name: flipInY;
+    animation-duration: .75s;
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+/*clicked*/
+@keyframes flipInY {
+	from {
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	40% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+		animation-timing-function: ease-in;
+	}
+
+	60% {
+		transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+		opacity: 1;
+	}
+
+	80% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+	}
+
+	to {
+		transform: perspective(400px);
+	}
+}

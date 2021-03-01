@@ -1,0 +1,43 @@
+.start-page-score{
+    justify-content: center;
+}
+.score-button{
+    width: 300px;
+    height: 100px;
+    font-size: 60px;
+}
+.score-message{
+    background-color: rgba(165, 42, 42, 0.664);
+    color: white;
+    border-radius: 10px;
+    font-size: 50px;
+    margin-top: 40px;
+}
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+}
+
+td, th {
+    border: 2px solid rgba(20, 3, 3, 0.568);
+    padding: 8px;
+}
+
+tr {
+    background-color: wheat;
+}
+
+tr:hover {
+    background-color: black;
+    color: wheat;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: burlywood;
+    color: brown;
+    font-size: 20px;
+}
